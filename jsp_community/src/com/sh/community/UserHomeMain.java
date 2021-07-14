@@ -19,6 +19,10 @@ public class UserHomeMain extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
+		int number = 7;
+		
+		request.setAttribute("number", number);
+		
 		RequestDispatcher rd = request.getRequestDispatcher("index.jsp");
 		rd.forward(request, response);
 		
