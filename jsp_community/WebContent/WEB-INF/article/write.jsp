@@ -3,7 +3,13 @@
 <!DOCTYPE html>
 <html>
 <head>
+
+
 <meta charset="UTF-8">
+
+<!-- 모바일에서 디자인이 축소되지 않게 함 -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
 
 <!-- Daisy UI -->
 <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.1/dist/tailwind.min.css" rel="stylesheet" type="text/css" />
@@ -23,6 +29,7 @@
 
 	width : 900px;
 	margin : 0 auto;
+	padding : 20px;
 
 }
 
@@ -54,7 +61,7 @@
 					ArticleWrite__submitDone = true;
 				}
 			</script>
-			<form action="../article/doWrite" method="post" name="article_frm" onsubmit="return false;">
+			<form action="/User/Article/WriteDo" method="post" name="article_frm" onsubmit="return false;">
 				<div class="form-control">
 					<span class="label-text">제목</span>
 					<div>
